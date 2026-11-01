@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refilwe Sodlulashe</title>
+<meta name="description" content="Portfolio of Refilwe Sodlulashe, software engineering student at African Leadership University building health technology for epilepsy care in South Africa.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Refilwe Sodlulashe, back to top"><span class="mark" aria-hidden="true">RS</span>Refilwe Sodlulashe</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle" id="theme" type="button" aria-pressed="false" aria-label="Switch colour theme">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor"/></svg>
+      <span>Light</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Software engineering student · African Leadership University, Kigali</p>
+      <h1>Refilwe Sodlulashe</h1>
+      <p class="lede">I build software for health. My mission is a head-worn seizure tracker that helps children and adults with epilepsy live safely in South Africa.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <ul class="facts">
+        <li>From Soweto, South Africa</li>
+        <li>Currently reside in Kigali, Rwanda</li>
+        <li>Mastercard Foundation Scholar</li>
+        <li>BSc (Hons) Software Engineering, July 2030</li>
+      </ul>
+      <figure class="scope-fig">
+        <div class="scope" id="scope">
+          <canvas id="eeg" role="img" aria-label="Simulated EEG traces from four channels, with a generated seizure burst"></canvas>
+          <span class="chan" style="top:12.5%" aria-hidden="true">Fp1</span>
+          <span class="chan" style="top:37.5%" aria-hidden="true">T3</span>
+          <span class="chan" style="top:62.5%" aria-hidden="true">C3</span>
+          <span class="chan" style="top:87.5%" aria-hidden="true">O1</span>
+          <span class="chip" id="chip"><i></i><span id="chipText">Monitoring</span></span>
+        </div>
+        <figcaption>Illustration of the idea behind my project: a simulated EEG with a generated seizure burst. Not patient data.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="about">
+      <div class="cols">
+        <div>
+          <p class="kicker">About</p>
+          <h2>From Soweto to Kigali, building toward health tech</h2>
+        </div>
+        <div>
+          <div class="prose">
+            <p>I am a first-year BSc (Hons) Software Engineering student at African Leadership University in Kigali, Rwanda, studying on the Mastercard Foundation Scholarship. I am from Soweto, South Africa.</p>
+            <p>I started out planning to study civil engineering and become a site engineer. When that route changed, I took the same instinct into software: build things that work in the real world, for real people.</p>
+            <p>Every student at ALU works on a mission that improves life in Africa. Mine is healthcare. I am designing a small device that tracks seizures in children and adults living with epilepsy in South Africa, and I am building the software, data and communication skills to make it real.</p>
+          </div>
+          <dl class="dl">
+            <dt>Studying</dt><dd>BSc (Hons) Software Engineering, ALU Rwanda</dd>
+            <dt>Graduating</dt><dd>July 2030 (expected)</dd>
+            <dt>Scholarship</dt><dd>Mastercard Foundation Scholars Program</dd>
+            <dt>Interests</dt><dd>Health technology, gender equity, education, women's empowerment</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="mission-head">
+        <p class="kicker">Featured mission</p>
+        <h2>A seizure tracker for South Africa</h2>
+        <p>Epilepsy can go unseen. Absence seizures are easy to miss, parents worry when children play outside, and doctors often work without recordings to decide on treatment. My 2050 Mission Impact Report describes a device that closes those gaps.</p>
+      </div>
+      <div class="mission">
+        <dl class="how">
+          <div><dt>Detect</dt><dd>A small, waterproof patch worn on the head tracks brain activity, including absence seizures that are easily missed.</dd></div>
+          <div><dt>Alert</dt><dd>When a child has a seizure, an alert with their location goes to a parent's phone, so children can play outside more freely.</dd></div>
+          <div><dt>Protect</dt><dd>If a wearer has a seizure while driving, the device alerts emergency services.</dd></div>
+          <div><dt>Inform</dt><dd>Recordings are kept so doctors can identify the seizure type and stage, and choose the right medicine sooner.</dd></div>
+        </dl>
+        <aside class="targets" aria-label="2050 vision targets">
+          <h3>2050 vision targets</h3>
+          <p class="note">Goals from my report, not results.</p>
+          <ul>
+            <li><b>480,000</b><span>people protected across all nine provinces</span></li>
+            <li><b>35%</b><span>fewer seizure-related injuries among child users</span></li>
+            <li><b>12 to 4</b><span>months to a correct diagnosis</span></li>
+            <li><b>600</b><span>public clinics connected to patient records</span></li>
+          </ul>
+        </aside>
+      </div>
+      <ul class="principles" aria-label="Design principles">
+        <li>Affordable</li><li>Private by design</li><li>Sustainable materials</li><li>Fair access</li>
+      </ul>
+      <p class="status"><b>Where it stands.</b> Concept stage. Next I am building a demo alert app on public EEG datasets and speaking with neurologists about what the design needs.</p>
+    </section>
+
+    <section id="projects">
+      <div class="sec-head">
+        <p class="kicker">Selected work</p>
+        <h2>Projects</h2>
+        <p>Software, data and event design from my first year, with the problem each one addresses.</p>
+      </div>
+      <ul class="projects">
+        <li>
+          <div>
+            <h3>HerPeriodPoverty Dashboard</h3>
+            <p class="meta">Team project · Web platform</p>
+          </div>
+          <div>
+            <p>A web platform, powered by HerFlow, that tackles period poverty among school-age girls in Rwanda.</p>
+            <ul class="tags"><li>Web</li><li>Social impact</li><li>Data</li></ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>HerPeriod Poverty Calculator</h3>
+            <p class="meta">Python command-line tool</p>
+          </div>
+          <div>
+            <p>Calculates the school days lost and the product costs caused by period poverty. It connects to the HerPeriodPoverty Dashboard project and is moving fully from SQLite to MySQL.</p>
+            <ul class="tags"><li>Python</li><li>MySQL</li><li>OOP</li><li>CLI</li></ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>School System Database</h3>
+            <p class="meta">Team of five · I own the Faculty table</p>
+          </div>
+          <div>
+            <p>A MySQL relational database for a school, covering students, classrooms, faculty, courses and extracurricular activities.</p>
+            <ul class="tags"><li>MySQL</li><li>Schema design</li><li>Teamwork</li></ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Grade Evaluator and Archiver</h3>
+            <p class="meta">Individual lab · Python and Bash</p>
+          </div>
+          <div>
+            <p>A Python script reads grades from CSV, validates grades and weights, computes GPA, decides pass or fail for formative and summative work, and flags resubmission candidates. A Bash script archives the file with a timestamp and logs each run.</p>
+            <ul class="tags"><li>Python</li><li>Bash</li><li>CSV</li><li>Validation</li></ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Regex Data Extractor</h3>
+            <p class="meta">Individual assignment</p>
+          </div>
+          <div>
+            <p>Pulls structured data such as emails and card numbers out of raw text and validates it, including ALU email domains. It rejects malformed or hostile input and keeps sensitive values out of its output.</p>
+            <ul class="tags"><li>Regex</li><li>Input validation</li><li>Security</li></ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Escape Mahama Challenge</h3>
+            <p class="meta">Event design</p>
+          </div>
+          <div>
+            <p>Guidelines for a two-phase innovation event for refugee communities. Teams solve timed puzzles that unlock real community challenges, then build simple prototypes and give two-minute pitches at an Innovation Marketplace, followed by mentor and peer feedback.</p>
+            <ul class="tags"><li>Facilitation</li><li>Design thinking</li><li>Events</li></ul>
+          </div>
+        </li>
+      </ul>
+      <p class="also">Also in my repositories: a Python object-oriented series (Base, Rectangle and Square classes) and MySQL scripting exercises.</p>
+    </section>
+
+    <section id="skills">
+      <div class="sec-head">
+        <p class="kicker">Skills</p>
+        <h2>What I work with, and what I am learning</h2>
+      </div>
+      <div class="skill-grid">
+        <div>
+          <h3>Programming</h3>
+          <ul><li>Python</li><li>JavaScript</li><li>SQL and MySQL</li><li>Bash scripting</li></ul>
+        </div>
+        <div>
+          <h3>Engineering practice</h3>
+          <ul><li>Object-oriented design</li><li>Relational schema design</li><li>Input validation with regex</li><li>Git and GitHub</li></ul>
+        </div>
+        <div>
+          <h3>Communication</h3>
+          <ul><li>Public speaking</li><li>Moderating tech events</li><li>Pitching and storytelling</li><li>Facilitation</li></ul>
+        </div>
+        <div>
+          <h3>Collaboration</h3>
+          <ul><li>Five-person software teams</li><li>Cross-disciplinary missions</li><li>Peer feedback</li></ul>
+        </div>
+      </div>
+      <div class="next">
+        <h3>Learning next</h3>
+        <p>The skills between my software background and a safe medical device.</p>
+        <ul>
+          <li>EEG and signal processing</li>
+          <li>Machine learning</li>
+          <li>Embedded, low-power code</li>
+          <li>Medical device quality (ISO 13485)</li>
+          <li>Health-data privacy (POPIA)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="programmes">
+      <div class="sec-head">
+        <p class="kicker">Programmes and leadership</p>
+        <h2>Where I practise</h2>
+      </div>
+      <ul class="prog">
+        <li><h3>Mastercard Foundation Scholars</h3><p>Scholar at African Leadership University, Rwanda.</p></li>
+        <li><h3>Aspire Institute</h3><p>Member of a student-led AI project.</p></li>
+        <li><h3>RaiseHerVoice</h3><p>A public speaking programme that sharpens how I pitch and tell stories.</p></li>
+        <li><h3>Tech events</h3><p>Moderator for technology events and community sessions.</p></li>
+      </ul>
+    </section>
+
+    <section id="journey">
+      <div class="cols">
+        <div>
+          <p class="kicker">Journey</p>
+          <h2>Where I started, and where I am heading</h2>
+          <p style="color:var(--muted)">Dates after 2026 are targets. Clinical validation and licensing can take longer than planned.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <p class="when">Before</p>
+            <h3>Soweto, South Africa</h3>
+            <p>Planned a civil engineering degree at Stellenbosch University, aiming to become a site engineer.</p>
+          </li>
+          <li class="now">
+            <p class="when">2026 · Now</p>
+            <h3>First year at ALU, Kigali</h3>
+            <p>Studying software engineering as a Mastercard Foundation Scholar and building my first projects.</p>
+          </li>
+          <li class="future">
+            <p class="when">July 2029</p>
+            <h3>Graduate in Software Engineering</h3>
+            <p>With a working prototype, a clinical adviser and a portfolio of health-tech projects.</p>
+          </li>
+          <li class="future">
+            <p class="when">2029 to 2032</p>
+            <h3>Join a medical-device team, then pilot</h3>
+            <p>Learn quality and regulation on the job, register with SAHPRA, run clinic pilots and launch a first release.</p>
+          </li>
+          <li class="future">
+            <p class="when">2050</p>
+            <h3>No one living with epilepsy is unseen</h3>
+            <p>Safe, fair epilepsy care available across South Africa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="kicker">Contact</p>
+      <h2>Let's build something that helps</h2>
+      <p class="lede2">I am looking for internships, research placements and mentors in health technology, biomedical software and AI for health. If you work on epilepsy care, medical devices or EEG, I would like to hear from you.</p>
+      <dl class="reach" id="reach">
+                <div>
+          <dt>Email</dt>
+          <dd>r.sodlulash@alustudent.com</dd>
+          <button class="copy" type="button" data-copy="r.sodlulash@alustudent.com">Copy</button>
+        </div>
+        <div>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/refilwe-sodlulashe-189293358/" target="_blank" rel="noopener">linkedin.com/in/refilwe-sodlulashe-189293358</a></dd>
+          <span></span>
+        </div>
+        <div>
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/rsodlulash-png" target="_blank" rel="noopener">github.com/rsodlulash-png</a></dd>
+          <span></span>
+        </div>
+      </dl>
+
+    </section>
+  </div>
+</main>
+
+<div class="wrap">
+  <footer>
+    <span>Refilwe Junior Sodlulashe</span>
+    <span>African Leadership University · Kigali, Rwanda</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
